@@ -53,7 +53,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 # TOOLCHAIN = the toolchain u want to use "gcc/clang"
 
 CHATID="-1001283860476"
-API_BOT="2049436092:AAGobgTgnXbNbeYgG7RdiPINcCnDhxbP8XU"
+API_BOT="2049436092:AAEudfyjPp1dSrMcYSZ0zWOqkQ5gk9BrgvM"
 
 DEVICE="Redmi Note 4/4X"
 CODENAME="mido"
