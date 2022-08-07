@@ -53,19 +53,19 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 # TOOLCHAIN = the toolchain u want to use "gcc/clang"
 
 CHATID="-1001283860476"
-API_BOT="2049436092:AAEudfyjPp1dSrMcYSZ0zWOqkQ5gk9BrgvM"
+API_BOT="1994183033:AAGXyCZNN59cFBu0uNK_a8M_bV27grUo8mE"
 
-DEVICE="Redmi Note 4/4X"
-CODENAME="mido"
+DEVICE="Redmi Note 11 Pro+"
+CODENAME="veux"
 KERNEL_NAME="FussionKernel"
 
 DEFCONFIG="mido_defconfig"
 
-AnyKernel="https://github.com/Hunter-commits/anykernel.git"
-AnyKernelbranch="master"
+AnyKernel="https://github.com/Dragon-1237/anykernel.git"
+AnyKernelbranch="veux"
 
-HOSST="Alone's Buildbot"
-USEER="Alone0316"
+HOSST="Busy's Buildbot"
+USEER="Busy_AF_2"
 
 TOOLCHAIN="clang"
 
@@ -207,7 +207,7 @@ KERVER=$(make kernelversion)
                 zip -r "$ZIP" *
                 curl -sLo zipsigner-3.0.jar https://raw.githubusercontent.com/Hunter-commits/AnyKernel/master/zipsigner-3.0.jar
                 java -jar zipsigner-3.0.jar "$ZIP".zip "$ZIP"-signed.zip
-                tg_post_msg "<b>=============================</b> %0A <b>× FussionKernel For Redmi note 4/4x ×</b> %0A <b>=============================</b> %0A%0A <b>Date : </b> <code>$(TZ=India/Kolkata date)</code> %0A%0A <b>Device Code Name:</b> <code>$CODENAME</code> %0A%0A <b>Kernel Version :</b> <code>$KERVER</code> %0A%0A <b>Developer:</b> @Alone0316 %0A%0A <b>Support group:</b> t.me/fussionkernelmido %0A%0A <b>Channel:</b> t.me/fkupdates %0A%0A <b>Changelog:</b> %0A https://github.com/Alone0316/kernel_mido/commits/normal %0A%0A <b>Download Normal version:</b> %0A https://t.me/fkupdates/ %0A%0A <b>Download Overclock version:</b> %0A https://t.me/fkupdates/ #fussionkernel #mido" "$CHATID"
+                tg_post_msg "<b>=============================</b> %0A <b>× FussionKernel For Redmi note 11 Pro+ ×</b> %0A <b>=============================</b> %0A%0A <b>Date : </b> <code>$(TZ=India/Kolkata date)</code> %0A%0A <b>Device Code Name:</b> <code>$CODENAME</code> %0A%0A <b>Kernel Version :</b> <code>$KERVER</code> %0A%0A <b>Developer:</b> @Alone0316 %0A%0A <b>Support group:</b> t.me/fussionkernelmido %0A%0A <b>Channel:</b> t.me/fkupdates %0A%0A <b>Changelog:</b> %0A https://github.com/Alone0316/kernel_mido/commits/normal %0A%0A <b>Download Normal version:</b> %0A https://t.me/fkupdates/ %0A%0A <b>Download Overclock version:</b> %0A https://t.me/fkupdates/ #fussionkernel #mido" "$CHATID"
                 tg_post_build "$ZIP"-signed.zip "$CHATID"
                 cd ..
                 rm -rf error.log
